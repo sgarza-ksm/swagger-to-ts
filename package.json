@@ -1,0 +1,62 @@
+{
+  "name": "@manifoldco/swagger-to-ts",
+  "description": "Generate TypeScript types from Swagger OpenAPI specs",
+  "version": "1.4.0",
+  "license": "ISC",
+  "bin": {
+    "swagger-to-ts": "bin/cli.js"
+  },
+  "files": [
+    "dist-*/",
+    "bin/",
+    "bin/"
+  ],
+  "pika": true,
+  "sideEffects": false,
+  "keywords": [
+    "swagger",
+    "typescript",
+    "ts",
+    "openapi",
+    "node"
+  ],
+  "homepage": "https://github.com/manifoldco/swagger-to-ts#readme",
+  "bugs": {
+    "url": "https://github.com/manifoldco/swagger-to-ts/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manifoldco/swagger-to-ts.git"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "fs-extra": "^8.0.1",
+    "js-yaml": "^3.13.1",
+    "meow": "^5.0.0",
+    "prettier": "^1.18.2"
+  },
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.6.0",
+    "@pika/plugin-copy-assets": "^0.6.0",
+    "@pika/plugin-ts-standard-pkg": "^0.6.0",
+    "@types/jest": "^24.0.13",
+    "@types/js-yaml": "^3.12.1",
+    "@types/prettier": "^1.18.3",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  },
+  "source": "dist-src/index.js",
+  "types": "dist-types/index.d.ts",
+  "main": "dist-node/index.js"
+}
