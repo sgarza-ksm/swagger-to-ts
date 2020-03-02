@@ -62,7 +62,7 @@ function parse(spec, options = {}) {
             if (refProperties.type && TYPES[refProperties.type]) {
                 return TYPES[refProperties.type];
             }
-            return refName || DEFAULT_TYPE;
+            return refName ? `${wrapper.split(' ').pop()}.${refName}` : DEFAULT_TYPE;
         }
         if (items && items.$ref) {
             const [refName] = getRef(items.$ref);

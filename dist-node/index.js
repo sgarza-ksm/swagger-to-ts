@@ -375,7 +375,7 @@ function parse$1(spec, options = {}) {
         return TYPES$1[refProperties.type];
       }
 
-      return refName || DEFAULT_TYPE;
+      return refName ? `${wrapper.split(' ').pop()}.${refName}` : DEFAULT_TYPE;
     }
 
     if (items && items.$ref) {
