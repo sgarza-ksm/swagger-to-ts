@@ -447,7 +447,7 @@ function parse$1(spec, options = {}) {
     const isExtending = includes.length ? ` extends ${includes.join(', ')}` : '';
     output.push(`export interface ${formatKey(ID)}${isExtending} {`);
     Object.entries(allProperties).forEach(([key, value]) => {
-      const isNonNullableString = value.type === 'string' && value.nullable === false;
+      const isNonNullableString = value.type === 'string' && !value.nullable;
       const isOptional = !Array.isArray(required) || required.indexOf(key) === -1;
       const formattedKey = formatProperties ? formatKey(key) : key;
       const name = `${sanitize$1(formattedKey)}${isOptional && !isNonNullableString ? '?' : ''}`;
