@@ -1,10 +1,10 @@
 {
-  "name": "@manifoldco/swagger-to-ts",
+  "name": "openapi-typescript",
   "description": "Generate TypeScript types from Swagger OpenAPI specs",
-  "version": "1.4.0",
+  "version": "2.4.2",
   "license": "ISC",
   "bin": {
-    "swagger-to-ts": "bin/cli.js"
+    "openapi-typescript": "bin/cli.js"
   },
   "files": [
     "dist-*/",
@@ -17,44 +17,46 @@
     "swagger",
     "typescript",
     "ts",
+    "dts",
     "openapi",
+    "codegen",
+    "generation",
+    "openapi 3",
     "node"
   ],
-  "homepage": "https://github.com/manifoldco/swagger-to-ts#readme",
+  "homepage": "https://github.com/drwpow/openapi-typescript#readme",
   "bugs": {
-    "url": "https://github.com/manifoldco/swagger-to-ts/issues"
+    "url": "https://github.com/drwpow/openapi-typescript/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manifoldco/swagger-to-ts.git"
+    "url": "https://github.com/drwpow/openapi-typescript"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "fs-extra": "^8.0.1",
-    "js-yaml": "^3.13.1",
-    "meow": "^5.0.0",
-    "prettier": "^1.18.2"
+    "chalk": "^4.1.0",
+    "js-yaml": "^3.14.0",
+    "meow": "^8.0.0",
+    "prettier": "^2.1.2"
   },
   "devDependencies": {
     "@pika/pack": "^0.5.0",
-    "@pika/plugin-build-node": "^0.6.0",
-    "@pika/plugin-copy-assets": "^0.6.0",
-    "@pika/plugin-ts-standard-pkg": "^0.6.0",
-    "@types/jest": "^24.0.13",
-    "@types/js-yaml": "^3.12.1",
-    "@types/prettier": "^1.18.3",
-    "@typescript-eslint/eslint-plugin": "^1.10.2",
-    "@typescript-eslint/parser": "^1.10.2",
-    "eslint": "^5.16.0",
-    "eslint-config-prettier": "^6.4.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "jest": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "tslib": "^1.10.0",
-    "typescript": "^3.6.4"
+    "@pika/plugin-build-node": "^0.9.2",
+    "@pika/plugin-copy-assets": "^0.9.2",
+    "@pika/plugin-ts-standard-pkg": "^0.9.2",
+    "@types/jest": "^26.0.14",
+    "@types/js-yaml": "^3.12.5",
+    "@types/prettier": "^2.1.5",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.5.3",
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
   },
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "source": "dist-src/index.js",
   "types": "dist-types/index.d.ts",
