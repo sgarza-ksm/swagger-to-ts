@@ -17,6 +17,8 @@ export default function propertyMapper<T = any>(schema: T, transform: SwaggerToT
       Object.entries(node.properties).map(([key, val]) => {
         // if $ref, skip
         if (val.$ref) {
+          // ensure val is String
+          val.$ref = String(val.$ref)
           return [key, val];
         }
 
