@@ -24,6 +24,7 @@ export default function propertyMapper<T = any>(
       Object.entries(node.properties).map(([key, val]) => {
         // if $ref, skip
         if (val.$ref) {
+          val.$ref = String(val.$ref)
           return [key, val];
         }
 
